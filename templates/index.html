@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+    {% block others %}
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    {% endblock %}
+
+
+
+{% block content %}
+
+{% include "partials/navbar.html" %}
+
+{% include "partials/header.html" %}
+
+    <section class='flex flex-col md:flex-row items-center border-white-300 border-b-8' style="min-height: 70vh; background-color: #010102;">
+        <div class="md:w-1/2 flex flex-col justify-center  text-center md:text-left p-5 md:p-10 ">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4" style="color:white">
+                Enjoy on your TV.
+            </h2>
+            <h5 class="md:text-xl text-lg" style="color:white">
+                Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+            </h5>
+        </div>
+        <div class='md:w-1/2 flex justify-center items-center'>
+            <img src="{% static 'img/tv.png' %}" class="w-8/12" alt="">
+        </div>
+    </section>
+
+
+    <section class='flex flex-col md:flex-row items-center border-white-300 border-b-8' style="min-height: 70vh; background-color: #010102;">
+        <div class='md:w-1/2 flex justify-center items-center'>
+            <img src="{% static 'img/mobile-0819.jpg' %}" class="w-8/12" alt="">
+        </div>
+
+        <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4" style="color:white">
+                Download your shows to watch offline.
+            </h2>
+            <h5 class="md:text-xl text-lg" style="color:white">
+                Save your favorites easily and always have something to watch.
+            </h5>
+        </div>
+        
+    </section>
+
+    <section class='flex flex-col md:flex-row items-center border-white-300 border-b-8' style="min-height: 70vh; background-color: #010102;">
+        <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4" style="color:white" style="color:white">
+                Create profiles for kids.
+            </h2>
+            <h5 class="md:text-xl text-lg" style="color:white">
+                Send kids on adventures with their favorite characters in a space made just for them—free with your membership.
+            </h5>
+        </div>
+        <div class='md:w-1/2 flex justify-center items-center'>
+            <img src="{% static 'img/netflix_kid.png' %}" class="w-8/12" alt="">
+        </div>
+    </section>
+
+    {% include "partials/footer.html" %}
+
+{% endblock %}
