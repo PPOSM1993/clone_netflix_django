@@ -17,6 +17,7 @@ Use a better box model (opinionated).
 ::before,
 ::after {
   box-sizing: border-box;
+  text-transform: uppercase;
 }
 
 /**
@@ -26,7 +27,7 @@ Use a more readable tab size (opinionated).
 html {
   -moz-tab-size: 4;
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
 }
 
 /**
